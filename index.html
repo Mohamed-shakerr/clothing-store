@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOIR STUDIO — Wear the Statement</title>
+  <meta name="description" content="NOIR STUDIO — modern streetwear clothing brand. Shop t-shirts, hoodies, pants and jackets." />
+
+  <!-- Google Fonts: Bebas Neue (display), Inter (body), Space Mono (utility/numbers) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="#home" class="logo">NOIR<span>.</span></a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#shop">Shop</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <button class="cart-toggle" id="cartToggle" aria-label="Open cart">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+          </svg>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ PROMO MARQUEE (signature element) ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>NEW DROP — SS26 COLLECTION</span>
+      <span>FREE SHIPPING OVER 1500 EGP</span>
+      <span>LIMITED EDITION HOODIES</span>
+      <span>NEW DROP — SS26 COLLECTION</span>
+      <span>FREE SHIPPING OVER 1500 EGP</span>
+      <span>LIMITED EDITION HOODIES</span>
+    </div>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero__content">
+      <p class="eyebrow">SS26 — NEW ARRIVALS</p>
+      <h1 class="hero__title">WEAR THE<br />STATEMENT</h1>
+      <p class="hero__subtitle">Minimal silhouettes, maximal attitude. Everyday streetwear built for the way you actually live.</p>
+      <a href="#shop" class="btn btn--primary">Shop the Collection</a>
+    </div>
+    <div class="hero__visual">
+      <img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?w=900&q=80&auto=format&fit=crop" alt="Model wearing NOIR STUDIO streetwear jacket" />
+      <span class="hero__watermark">NOIR</span>
+    </div>
+  </section>
+
+  <!-- ============ CATEGORIES ============ -->
+  <section class="categories" id="categories">
+    <h2 class="section-title">Shop by Category</h2>
+    <div class="categories__grid">
+      <a href="#shop" class="category-card" data-filter="tshirts">
+        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&q=80&auto=format&fit=crop" alt="T-Shirts category" />
+        <span>T-Shirts</span>
+      </a>
+      <a href="#shop" class="category-card" data-filter="hoodies">
+        <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500&q=80&auto=format&fit=crop" alt="Hoodies category" />
+        <span>Hoodies</span>
+      </a>
+      <a href="#shop" class="category-card" data-filter="pants">
+        <img src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=500&q=80&auto=format&fit=crop" alt="Pants category" />
+        <span>Pants</span>
+      </a>
+      <a href="#shop" class="category-card" data-filter="jackets">
+        <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500&q=80&auto=format&fit=crop" alt="Jackets category" />
+        <span>Jackets</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED / SHOP PRODUCTS ============ -->
+  <section class="shop" id="shop">
+    <h2 class="section-title">Featured Products</h2>
+    <p class="section-subtitle">Every piece cut for movement, made to last.</p>
+
+    <div class="filter-bar" id="filterBar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="tshirts">T-Shirts</button>
+      <button class="filter-btn" data-filter="hoodies">Hoodies</button>
+      <button class="filter-btn" data-filter="pants">Pants</button>
+      <button class="filter-btn" data-filter="jackets">Jackets</button>
+    </div>
+
+    <!-- Product cards are injected here by script.js from the PRODUCTS array -->
+    <div class="product-grid" id="productGrid"></div>
+  </section>
+
+  <!-- ============ ABOUT STRIP ============ -->
+  <section class="about-strip">
+    <p>Designed in-studio. Cut for real bodies. Shipped nationwide from Cairo.</p>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="contact">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <a href="#home" class="logo logo--footer">NOIR<span>.</span></a>
+        <p>Modern streetwear for people who don't follow trends — they set them.</p>
+      </div>
+
+      <div class="footer__col">
+        <h3>Contact</h3>
+        <p>Email: hello@noirstudio.com</p>
+        <p>Phone: +20 100 000 0000</p>
+        <p>Address: Mansoura, Egypt</p>
+      </div>
+
+      <div class="footer__col">
+        <h3>Follow</h3>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="TikTok">TikTok</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 NOIR STUDIO. University Project — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ============ ORDER MODAL ============ -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" id="modalClose" aria-label="Close order form">&times;</button>
+      <h3 id="modalTitle">Complete Your Order</h3>
+
+      <form id="orderForm" novalidate>
+        <label for="customerName">Full Name</label>
+        <input type="text" id="customerName" name="customerName" placeholder="e.g. Mohamed Ahmed" required />
+
+        <label for="customerPhone">Phone Number</label>
+        <input type="tel" id="customerPhone" name="customerPhone" placeholder="e.g. 01000000000" pattern="^01[0125][0-9]{8}$" required />
+
+        <label for="customerAddress">Address</label>
+        <textarea id="customerAddress" name="customerAddress" placeholder="Street, City, Governorate" required rows="2"></textarea>
+
+        <label>Order Summary</label>
+        <div class="order-summary" id="orderSummary"><!-- filled by script.js from the cart --></div>
+        <div class="order-total" id="orderTotal"></div>
+
+        <button type="submit" class="btn btn--primary btn--block" id="submitOrderBtn">Submit Order</button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- ============ CART DRAWER ============ -->
+  <div class="cart-overlay" id="cartOverlay">
+    <aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <div class="cart-drawer__header">
+        <h3 id="cartTitle">Your Cart</h3>
+        <button class="cart-drawer__close" id="cartClose" aria-label="Close cart">&times;</button>
+      </div>
+
+      <!-- Cart line items are injected here by script.js -->
+      <div class="cart-drawer__items" id="cartItems"></div>
+
+      <div class="cart-drawer__footer">
+        <div class="cart-drawer__subtotal">
+          <span>Subtotal</span>
+          <span id="cartSubtotal">0 EGP</span>
+        </div>
+        <button class="btn btn--primary btn--block" id="checkoutBtn" disabled>Checkout</button>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ============ CHATBOT PLACEHOLDER ============ -->
+  <button class="chat-toggle" id="chatToggle" aria-label="Open chat">
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+    </svg>
+  </button>
+
+  <div class="chat-panel" id="chatPanel">
+    <div class="chat-panel__header">
+      <span>NOIR Assistant</span>
+      <button id="chatClose" aria-label="Close chat">&times;</button>
+    </div>
+    <!-- 🔌 n8n chatbot widget can be embedded inside this container.
+         Example: paste the n8n chat widget <script> snippet here,
+         or mount it to #n8nChatContainer at runtime. -->
+    <div class="chat-panel__body" id="n8nChatContainer">
+      <p class="chat-placeholder">👋 Hi! This is a placeholder for the NOIR chatbot.<br />Connect your n8n chat widget here.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
