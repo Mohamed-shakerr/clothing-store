@@ -213,9 +213,32 @@
  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 <script type="module">
 	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
-
 	createChat({
-		webhookUrl: 'https://mohmedshakerr.app.n8n.cloud/webhook/94f0dba7-8494-495c-965a-555beb1ee39c/chat'
-	});
+	webhookUrl: 'https://mohmedshakerr.app.n8n.cloud/webhook/94f0dba7-8494-495c-965a-555beb1ee39c/chat',
+	webhookConfig: {
+		method: 'POST',
+		headers: {}
+	},
+	target: '#n8n-chat',
+	mode: 'window',
+	chatInputKey: 'chatInput',
+	chatSessionKey: 'sessionId',
+	loadPreviousSession: true,
+	metadata: {},
+	showWelcomeScreen: false,
+	defaultLanguage: 'en',
+	initialMessages: [
+'أهلا بك كيف يمكنني مساعدنك اليوم ؟'	],
+	i18n: {
+		en: {
+			title: 'مرحبا بك ',
+			subtitle: "",
+			footer: '',
+			getStarted: 'New Conversation',
+			inputPlaceholder: 'Type your question..',
+		},
+	},
+	enableStreaming: false,
+});
 </script>
 </html>
