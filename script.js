@@ -7,7 +7,7 @@
 
 // ---- CONFIG -----------------------------------------------------------
 // 🔧 Replace this with your real n8n production webhook URL.
-const WEBHOOK_URL = "https://mohmedshakerr.app.n8n.cloud/webhook-test/new-order";
+const WEBHOOK_URL = "https://mohmedshakerr.app.n8n.cloud/webhook/new-order";
 const CART_STORAGE_KEY = "noirCart";
 
 // ---- SAMPLE PRODUCT DATA -----------------------------------------------
