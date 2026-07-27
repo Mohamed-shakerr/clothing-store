@@ -19,7 +19,7 @@ const PRODUCTS = [
     name: "Essential Cotton Tee",
     category: "tshirts",
     price: 450,
-    stock: 18,
+    stock: 15,
     image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&q=80&auto=format&fit=crop",
   },
   {
@@ -27,7 +27,7 @@ const PRODUCTS = [
     name: "Oversized Graphic Tee",
     category: "tshirts",
     price: 520,
-    stock: 4,
+    stock: 15,
     image: "https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=600&q=80&auto=format&fit=crop",
   },
   {
@@ -35,7 +35,7 @@ const PRODUCTS = [
     name: "Heavyweight Pullover Hoodie",
     category: "hoodies",
     price: 950,
-    stock: 12,
+    stock: 15,
     image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600&q=80&auto=format&fit=crop",
   },
   {
@@ -43,7 +43,7 @@ const PRODUCTS = [
     name: "Zip-Up Fleece Hoodie",
     category: "hoodies",
     price: 1020,
-    stock: 3,
+    stock: 15,
     image: "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=600&q=80&auto=format&fit=crop",
   },
   {
@@ -51,7 +51,7 @@ const PRODUCTS = [
     name: "Tapered Cargo Pants",
     category: "pants",
     price: 780,
-    stock: 9,
+    stock: 15,
     image: "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=600&q=80&auto=format&fit=crop",
   },
   {
@@ -67,7 +67,7 @@ const PRODUCTS = [
     name: "Denim Trucker Jacket",
     category: "jackets",
     price: 1250,
-    stock: 6,
+    stock: 15,
     image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=600&q=80&auto=format&fit=crop",
   },
   {
@@ -75,7 +75,7 @@ const PRODUCTS = [
     name: "Water-Resistant Bomber",
     category: "jackets",
     price: 1480,
-    stock: 2,
+    stock: 15,
     image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600&q=80&auto=format&fit=crop",
   },
   {
@@ -83,7 +83,7 @@ const PRODUCTS = [
     name: "Striped Boxy Tee",
     category: "tshirts",
     price: 480,
-    stock: 21,
+    stock: 15,
     image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600&q=80&auto=format&fit=crop",
   },
   {
@@ -91,7 +91,7 @@ const PRODUCTS = [
     name: "Long Sleeve Ribbed Tee",
     category: "tshirts",
     price: 510,
-    stock: 7,
+    stock: 15,
     image: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=600&q=80&auto=format&fit=crop",
   },
   {
@@ -99,7 +99,7 @@ const PRODUCTS = [
     name: "Pocket Tee — Off White",
     category: "tshirts",
     price: 440,
-    stock: 5,
+    stock: 15,
     image: "https://images.unsplash.com/photo-1562157873-818bc0726f68?w=600&q=80&auto=format&fit=crop",
   },
   {
@@ -107,7 +107,7 @@ const PRODUCTS = [
     name: "Acid Wash Tee",
     category: "tshirts",
     price: 495,
-    stock: 13,
+    stock: 15,
     image: "https://images.unsplash.com/photo-1520975916090-3105956dac38?w=600&q=80&auto=format&fit=crop",
   },
   {
@@ -115,7 +115,7 @@ const PRODUCTS = [
     name: "Cropped Hoodie",
     category: "hoodies",
     price: 880,
-    stock: 10,
+    stock: 15,
     image: "https://images.unsplash.com/photo-1509942774463-acf339cf87d5?w=600&q=80&auto=format&fit=crop",
   },
   {
@@ -123,7 +123,7 @@ const PRODUCTS = [
     name: "Oversized Hoodie — Charcoal",
     category: "hoodies",
     price: 970,
-    stock: 1,
+    stock: 15,
     image: "https://images.unsplash.com/photo-1571945153237-4929e783af4a?w=600&q=80&auto=format&fit=crop",
   },
   {
@@ -131,7 +131,7 @@ const PRODUCTS = [
     name: "Sherpa-Lined Hoodie",
     category: "hoodies",
     price: 1150,
-    stock: 8,
+    stock: 15,
     image: "https://images.unsplash.com/photo-1516826957135-700dedea698c?w=600&q=80&auto=format&fit=crop",
   },
   {
@@ -139,7 +139,7 @@ const PRODUCTS = [
     name: "Track Pants — Ribbed Cuff",
     category: "pants",
     price: 700,
-    stock: 16,
+    stock: 15,
     image: "https://images.unsplash.com/photo-1552902865-b72c031ac5ea?w=600&q=80&auto=format&fit=crop",
   },
   {
@@ -147,7 +147,7 @@ const PRODUCTS = [
     name: "Wide Leg Chinos",
     category: "pants",
     price: 820,
-    stock: 4,
+    stock: 15,
     image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=600&q=80&auto=format&fit=crop",
   },
   {
@@ -155,7 +155,7 @@ const PRODUCTS = [
     name: "Slim Fit Black Jeans",
     category: "pants",
     price: 860,
-    stock: 11,
+    stock: 15,
     image: "https://images.unsplash.com/photo-1475178626620-a4d074967452?w=600&q=80&auto=format&fit=crop",
   },
   {
@@ -163,7 +163,7 @@ const PRODUCTS = [
     name: "Utility Cargo Jogger",
     category: "pants",
     price: 750,
-    stock: 0,
+    stock: 15,
     image: "https://images.unsplash.com/photo-1542272604-787c3835535d?w=600&q=80&auto=format&fit=crop",
   },
   {
@@ -171,7 +171,7 @@ const PRODUCTS = [
     name: "Leather Biker Jacket",
     category: "jackets",
     price: 2200,
-    stock: 3,
+    stock: 15,
     image: "https://images.unsplash.com/photo-1520975954732-35dd22299614?w=600&q=80&auto=format&fit=crop",
   },
   {
@@ -179,7 +179,7 @@ const PRODUCTS = [
     name: "Quilted Puffer Jacket",
     category: "jackets",
     price: 1650,
-    stock: 9,
+    stock: 15,
     image: "https://images.unsplash.com/photo-1544923246-77307dd654cb?w=600&q=80&auto=format&fit=crop",
   },
   {
@@ -187,7 +187,7 @@ const PRODUCTS = [
     name: "Corduroy Overshirt Jacket",
     category: "jackets",
     price: 1380,
-    stock: 6,
+    stock: 15,
     image: "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=600&q=80&auto=format&fit=crop",
   },
 ];
